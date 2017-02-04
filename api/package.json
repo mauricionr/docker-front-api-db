@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "* Nodejs API Test * Author: [Maurício](https://github.com/mauricionr/) * Version 0.0.1 ### How do I get set up? ###",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "morgan": "^1.7.0",
+    "pg": "^6.1.2",
+    "shortid": "^2.2.6",
+    "crypto": "0.0.3",
+    "jsonwebtoken": "^7.2.1"
+  },
+  "author": "Mauricio Nunes dos reis",
+  "license": "ISC"
+}

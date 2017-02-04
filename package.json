@@ -1,15 +1,18 @@
 {
   "name": "fx",
   "version": "1.0.0",
-  "description": "fx test",
-  "main": "apps.js",
+  "description": "",
   "scripts": {
-    "test": "npm run test",
-    "start": "npm run start"
+    "api": "nodemon api/server.js",
+    "web": "nodemon web/server.js"
   },
-  "author": "Mauricio",
-  "dependencies": {
-    "express": "4.14.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricionr/docker-front-api-db"
   },
-  "license": "MIT"
+  "author": "Mauricio <mauricionr@netcombr.onmicrosoft.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

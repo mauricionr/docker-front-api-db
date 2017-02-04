@@ -1,0 +1,32 @@
+version: "2"
+services:
+  db:
+    image: postgres:9.6.0
+    environment:
+      POSTGRES_USER: fxuser
+      POSTGRES_DB: fx
+    ports: 
+      - "5432:5432"    
+  api:
+    environment: 
+      DB_HOST: db
+    build:
+      context: api
+      dockerfile: DockerFile
+    ports:
+      - "5000:3000"
+    volumes:
+      - .:/usr/api
+    links: 
+      - db
+  web:
+    build:
+      context: web
+      dockerfile: DockerFile
+    ports:
+      - "5001:3001"
+    volumes:
+      - .:/usr/web
+    links: 
+      - api
+      - db

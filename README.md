@@ -15,6 +15,7 @@ make sure you have **docker**, **docker compose**, **git**, **nodejs** installed
 `docker-compose up --build -d`
 
 go to `http://localhost:5001` to see the application running
+
 go to `http://localhost:5000` to see the API status
 
 #### Local dev
@@ -43,3 +44,7 @@ WEB should be running on port 3001
 ##### db
 
 `docker-compose up db`
+
+##### Known issues
+
+[https://github.com/mauricionr/docker-front-api-db/issues](Issues)

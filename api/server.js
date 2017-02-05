@@ -1,10 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 const routes = require('./routes/index')
 const pool = require('./settings')
 const PORT = process.env.API_PORT || 3000;
 const app = express();
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 

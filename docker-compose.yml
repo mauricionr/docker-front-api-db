@@ -5,10 +5,10 @@ services:
     environment:
       POSTGRES_USER: fxuser
       POSTGRES_DB: fx
-    ports: 
-      - "5432:5432"    
+    ports:
+      - "5432:5432"
   api:
-    environment: 
+    environment:
       DB_HOST: db
     build:
       context: api
@@ -17,7 +17,9 @@ services:
       - "5000:3000"
     volumes:
       - .:/usr/api
-    links: 
+    links:
+      - db
+    depends_on:
       - db
   web:
     build:
@@ -27,6 +29,8 @@ services:
       - "5001:3001"
     volumes:
       - .:/usr/web
-    links: 
+    links:
       - api
       - db
+    depends_on:
+      - api

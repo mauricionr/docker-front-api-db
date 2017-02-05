@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "* Nodejs API Test * Author: [Maurício](https://github.com/mauricionr/) * Version 0.0.1 ### How do I get set up? ###",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

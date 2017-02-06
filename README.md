@@ -45,6 +45,6 @@ WEB should be running on port 3001
 
 `docker-compose up db`
 
-##### Known issues
+##### TODO
 
-[https://github.com/mauricionr/docker-front-api-db/issues](Issues)
+AWS
